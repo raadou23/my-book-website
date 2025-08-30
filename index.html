@@ -3,48 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عندما تتمرد الأرض... وعندما يفسد الإنسان</title>
+    <title>أعمال ملوك رضوان الأدبية</title>
     <!-- تضمين مكتبة Tailwind CSS للتصميم السريع والاحترافي -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* إضافة خط عربي أنيق */
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+        /* إضافة خط عربي أنيق ودرجات لونية متناغمة */
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap');
         body {
             font-family: 'Tajawal', sans-serif;
-            direction: rtl; /* لجعل الكتابة من اليمين إلى اليسار */
-        }
-        .text-shadow {
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            direction: rtl;
         }
     </style>
 </head>
-<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen p-4">
+<body class="bg-gray-900 text-white flex flex-col items-center p-4 min-h-screen">
 
     <!--
-    هذا هو الحاوية الرئيسية للموقع.
-    لقد تم تصميمها لتكون متجاوبة وتظهر بشكل جميل على جميع الأجهزة.
+    هذا هو الجزء العلوي: نبذة عن المؤلف وصورته الشخصية.
+    يرجى استبدال رابط الصورة الافتراضية بصورتك الشخصية.
     -->
-    <main class="container mx-auto max-w-6xl bg-gray-800 rounded-3xl shadow-2xl overflow-hidden p-8 md:p-12">
-        <div class="md:flex md:items-center md:space-x-12">
+    <header class="w-full max-w-4xl bg-gray-800 rounded-3xl shadow-xl p-8 mb-12 text-center">
+        <div class="flex flex-col items-center">
+            <img src="https://placehold.co/300x300/F0D3A6/222?text=صورة+المؤلف" alt="صورة المؤلف ملوك رضوان" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-yellow-500 shadow-lg mb-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-yellow-500">ملوك رضوان</h1>
+            <p class="text-lg md:text-xl font-light text-gray-300">كاتب، باحث، ومؤرخ أدبي</p>
+            <p class="mt-4 text-md md:text-lg leading-relaxed text-gray-400">
+                ملوك رضوان هو كاتب وباحث شغوف بالتاريخ الإنساني والسلوك البشري. يهدف من خلال أعماله إلى إثارة الوعي حول التحديات التي تواجه البشرية، مقدماً رؤى عميقة وشاملة تجمع بين السرد التاريخي والتحليل النقدي.
+            </p>
+            <a href="#" class="mt-6 text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+                <span class="text-sm border-b-2 border-dashed border-gray-400">المزيد عن المؤلف</span>
+            </a>
+        </div>
+    </header>
 
-            <!--
-            القسم الأول: غلاف الكتاب ومعلومات المؤلف.
-            هنا يمكنك إضافة صورة الغلاف الحقيقية.
-            -->
-            <div class="md:w-1/3 flex flex-col items-center text-center">
+    <!--
+    هذا هو قسم "مكتبتي"، حيث سيتم عرض كل كتاب في بطاقة منفصلة.
+    عندما تنشر كتاباً جديداً، يمكنك ببساطة نسخ ولصق بطاقة جديدة في هذا القسم.
+    -->
+    <section class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!--
+        بطاقة الكتاب الأول: "عندما تتمرد الأرض..."
+        استبدل رابط الصورة ورابط الشراء بروابطك الحقيقية.
+        -->
+        <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <img src="https://placehold.co/1600x2400/292B2F/FFF?text=غلاف+الكتاب+الأول" alt="غلاف كتاب عندما تتمرد الأرض" class="w-full h-auto rounded-t-2xl">
+            <div class="p-6 text-center">
+                <h3 class="text-2xl font-bold mb-2">عندما تتمرد الأرض...</h3>
+                <h4 class="text-lg font-light text-yellow-500">وعندما يفسد الإنسان</h4>
+                <p class="text-sm text-gray-400 my-4 leading-relaxed">
+                    استكشاف عميق للقوى التي تشكل مصيرنا، وتحذير قوي ضد السذاجة، ودعوة لصحوة الضمير.
+                </p>
                 <!--
-                مسار الصورة الافتراضية للغلاف.
-                يرجى استبدال رابط الصورة هذا برابط غلاف كتابك الحقيقي.
+                هذا الزر يجب أن يؤدي إلى رابط مجمع (Universal Link) لكل منصات البيع.
                 -->
-                <img src="https://placehold.co/1600x2400/292B2F/FFF?text=عندما+تتمرد+الأرض+%26+عندما+يفسد+الإنسان" alt="غلاف كتاب عندما تتمرد الأرض" class="w-full max-w-xs rounded-xl shadow-lg mb-6 transform hover:scale-105 transition-transform duration-300 ease-in-out">
-                
-                <!--
-                صورة المؤلف.
-                استبدل هذا الرابط بصورتك الشخصية.
-                -->
-                <img src="https://placehold.co/300x300/F0D3A6/222?text=صورة+المؤلف" alt="صورة المؤلف" class="w-24 h-24 rounded-full border-4 border-yellow-500 shadow-md mb-2">
-                <p class="text-lg font-bold text-yellow-500">ملوك رضوان</p>
-                <p class="text-sm font-light text-gray-400">مؤلف وباحث</p>
+                <a href="#" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-full text-center font-bold text-lg hover:bg-blue-700 transition-colors duration-300 shadow-lg">شراء الكتاب</a>
             </div>
+        </div>
+        
+        <!--
+        بطاقة الكتاب الثاني: "اسم الكتاب الثاني"
+        (كمثال لإضافة كتاب جديد)
+        -->
+        <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <img src="https://placehold.co/1600x2400/292B2F/FFF?text=غلاف+الكتاب+الثاني" alt="غلاف كتاب جديد" class="w-full h-auto rounded-t-2xl">
+            <div class="p-6 text-center">
+                <h3 class="text-2xl font-bold mb-2">اسم الكتاب الثاني هنا</h3>
+                <h4 class="text-lg font-light text-yellow-500">عنوان فرعي اختياري</h4>
+                <p class="text-sm text-gray-400 my-4 leading-relaxed">
+                    وصف قصير ومبسط لجذب القارئ لاكتشاف محتوى الكتاب.
+                </p>
+                <a href="#" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-full text-center font-bold text-lg hover:bg-blue-700 transition-colors duration-300 shadow-lg">شراء الكتاب</a>
+            </div>
+        </div>
 
-            <!--
+        <!--
+        يمكنك نسخ هذه البطاقة ولصقها لإضافة المزيد من الكتب.
+        -->
+
+    </section>
+
+    <!--
+    هذا هو قسم التواصل في الأسفل.
+    أضف هنا روابط لصفحاتك على وسائل التواصل الاجتماعي.
+    -->
+    <footer class="w-full max-w-4xl mt-12 pt-8 text-center border-t border-gray-700">
+        <h4 class="text-xl font-bold mb-4 text-gray-400">تواصل مع المؤلف</h4>
+        <div class="flex justify-center space-x-6 space-x-reverse mb-4">
+            <a href="mailto:info@example.com" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12.713l-11.751-8.735a.75.75 0 011.002-1.048L12 11.258l10.749-7.328a.75.75 0 011.002 1.048L12 12.713zm-11.25 6.287a.75.75 0 01-.75-.75V5.25a.75.75 0 011.5 0v12.75a.75.75 0 01-.75.75zM23.25 19a.75.75 0 01-.75.75h-21a.75.75 0 01-.75-.75v-12.5a.75.75 0 011.5 0v12.5h20.5a.75.75 0 01-.75.75z" clip-rule="evenodd" fill-rule="evenodd" /></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6.54a7.95 7.95 0 01-2.28.62 3.99 3.99 0 001.76-2.22 8.01 8.01 0 01-2.54 1 4 4 0 00-6.85 3.65 11.49 11.49 0 01-8.35-4.22 4 4 0 001.24 5.3 4.02 4.02 0 01-1.81-.5v.05a4 4 0 003.2 3.92 4.01 4.01 0 01-1.81.07 4.01 4.01 0 003.74 2.76A8.02 8.02 0 012 19.34a11.5 11.5 0 006.27 1.83 11.49 11.49 0 0011.48-11.48v-.52a8.28 8.28 0 002.04-2.12z" clip-rule="evenodd" fill-rule="evenodd" /></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M21 7.25c0-.83-.67-1.5-1.5-1.5h-15c-.83 0-1.5.67-1.5 1.5v9.5c0 .83.67 1.5 1.5 1.5h7.5v-6h-2.5v-3h2.5V8.5a4 4 0 014-4h2.5v3h-2.5a.5.5 0 00-.5.5v2.5h3.5l-.5 3h-3V18h5.5c.83 0 1.5-.67 1.5-1.5v-9.5z" clip-rule="evenodd" fill-rule="evenodd" /></svg>
+            </a>
+        </div>
+        <p class="text-sm text-gray-500">
+            © 2024 ملوك رضوان. جميع الحقوق محفوظة.
+        </p>
+    </footer>
+</body>
+</html>
