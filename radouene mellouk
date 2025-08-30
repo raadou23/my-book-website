@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عندما تتمرد الأرض... وعندما يفسد الإنسان</title>
+    <!-- تضمين مكتبة Tailwind CSS للتصميم السريع والاحترافي -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* إضافة خط عربي أنيق */
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+            direction: rtl; /* لجعل الكتابة من اليمين إلى اليسار */
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen p-4">
+
+    <!--
+    هذا هو الحاوية الرئيسية للموقع.
+    لقد تم تصميمها لتكون متجاوبة وتظهر بشكل جميل على جميع الأجهزة.
+    -->
+    <main class="container mx-auto max-w-6xl bg-gray-800 rounded-3xl shadow-2xl overflow-hidden p-8 md:p-12">
+        <div class="md:flex md:items-center md:space-x-12">
+
+            <!--
+            القسم الأول: غلاف الكتاب ومعلومات المؤلف.
+            هنا يمكنك إضافة صورة الغلاف الحقيقية.
+            -->
+            <div class="md:w-1/3 flex flex-col items-center text-center">
+                <!--
+                مسار الصورة الافتراضية للغلاف.
+                يرجى استبدال رابط الصورة هذا برابط غلاف كتابك الحقيقي.
+                -->
+                <img src="https://placehold.co/1600x2400/292B2F/FFF?text=عندما+تتمرد+الأرض+%26+عندما+يفسد+الإنسان" alt="غلاف كتاب عندما تتمرد الأرض" class="w-full max-w-xs rounded-xl shadow-lg mb-6 transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                
+                <!--
+                صورة المؤلف.
+                استبدل هذا الرابط بصورتك الشخصية.
+                -->
+                <img src="https://placehold.co/300x300/F0D3A6/222?text=صورة+المؤلف" alt="صورة المؤلف" class="w-24 h-24 rounded-full border-4 border-yellow-500 shadow-md mb-2">
+                <p class="text-lg font-bold text-yellow-500">ملوك رضوان</p>
+                <p class="text-sm font-light text-gray-400">مؤلف وباحث</p>
+            </div>
+
+            <!--
